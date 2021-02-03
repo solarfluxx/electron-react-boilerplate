@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "CommonJS",
-    "lib": ["dom", "esnext"],
+	"experimentalDecorators": true,
+    "target": "es5",
+    "module": "esnext",
+    "lib": ["es6", "es2017", "dom"],
     "declaration": true,
     "declarationMap": true,
     "noEmit": true,
@@ -20,8 +21,11 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "allowJs": true
+	"allowJs": true,
   },
+  "include": [
+    "./src/**/**/*"
+  ],
   "exclude": [
     "test",
     "release",
