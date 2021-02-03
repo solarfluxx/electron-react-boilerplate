@@ -22,7 +22,7 @@ export default class App extends React.Component<AppProps> {
 		appRoot: css`
 			position: fixed;
 			top: 0; left: 0; right: 0; bottom: 0;
-			
+
 			overflow: auto;
 			user-select: none;
 			background-color: ${AppTheme.background.get({theme: 0})};
@@ -32,7 +32,7 @@ export default class App extends React.Component<AppProps> {
 	render() {
 		console.log('App render');
 		console.log(this.props.rootStore);
-		
+
 		return (
 			<div className={this.style.appRoot}>
 				<Router>
